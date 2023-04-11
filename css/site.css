@@ -1,0 +1,68 @@
+:root {
+    --ms-primary-color: #001e43;
+    --ms-secondary-color: rgb(255, 153, 59);
+    --ms-dark-color: #1b1b1b;
+    --ms-light-color: #DFE3E4;
+
+    --ms-navbar-toggler-glow: rgba(255, 153, 59, .6);
+    --ms-navbar-toggler-color: #ff993b;
+}
+
+/* START: Sticky Footer */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+/* END: Sticky Footer */
+
+#mainNav {
+    background: var(--ms-primary-color);
+}
+
+footer {
+    background: var(--ms-primary-color);
+    color: var(--ms-light-color);
+}
+
+footer .bi {
+    color: var(--ms-light-color);
+    font-size: 1.5rem;
+    padding-left: .5rem;
+    transition: color .25s ease;
+}
+
+footer .bi:hover {
+    color: var(--ms-secondary-color);
+}
+
+.checklist {
+    list-style-type: none;
+}
+
+.checklist>li i {
+    color: var(--ms-secondary-color);
+    padding-right: .5rem;
+}
+
+.devIcons {
+    font-size: 3rem;
+    padding-left: .5rem;
+}
+
+.appLogo {
+    max-width: 400px;
+}
